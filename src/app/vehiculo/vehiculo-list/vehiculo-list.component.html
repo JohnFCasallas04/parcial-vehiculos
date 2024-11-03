@@ -1,0 +1,54 @@
+<head>
+  <!-- Otros enlaces y scripts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jaldi&display=swap" rel="stylesheet">
+</head>
+
+<div class="container mt-4">
+  <div class="row mb-4">
+    <div class="col">
+      <a style="font-family: 'Jaldi', sans-serif; font-size: 36px;">TuSegundazo.com</a>
+      <img src="/Frame_12_3x.png" class="img-fluid">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Marca</th>
+            <th>Línea</th>
+            <th>Modelo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let v of vehiculos; let i = index">
+            <td>
+              <dd><strong>{{ i + 1 }}</strong></dd>
+            </td>
+            <td>
+              <dd>{{v.marca}}</dd>
+            </td>
+            <td>
+              <dd>{{v.linea}}</dd>
+            </td>
+            <td>
+              <dd>{{v.modelo}}</dd>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<footer style="text-align: center;">
+  <div class="container mt-4">
+    <div class="row mb-4">
+      <div class="col">
+        <a style="font-family: 'Inter', sans-serif; font-size: 18px;">Contact us: +57 3102105253 -
+          info&#64;tusegundazo.com - &#64;tusegundazo</a>
+      </div>
+    </div>
+  </div>
+</footer>

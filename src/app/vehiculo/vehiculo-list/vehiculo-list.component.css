@@ -1,0 +1,10 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.table {
+    font-family: 'Inter', sans-serif;
+    /* Aplica la fuente a las tablas */
+    font-size: 18px;
+    /* Establece el tamaño de fuente */
+}

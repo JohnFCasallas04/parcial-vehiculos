@@ -1,15 +1,14 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { environment } from '../../environments/environment.development';
 import { Observable } from 'rxjs';
 import { Vehiculo } from './Vehiculo';
-
-import { environment } from '../../environments/environment.development';
 
 @Injectable({
   providedIn: 'root'
 })
 export class VehiculoService {
-  private apiUrl = environment.baseUrl + '202212_MISW4104_Grupo1.json';
+  private apiUrl: string = environment.baseUrl + '202212_MISW4104_Grupo1.json';
 
   constructor(private http: HttpClient) { }
 
