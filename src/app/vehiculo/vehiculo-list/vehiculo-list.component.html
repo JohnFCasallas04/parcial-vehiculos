@@ -41,6 +41,10 @@
       </table>
     </div>
   </div>
+  
+  <div style="font-family: 'Inter', sans-serif; font-size: 18px;" *ngFor="let marca of getTotalPorMarca() | keyvalue">
+    Total {{ marca.key }}: {{ marca.value }}
+  </div>
 </div>
 <footer style="text-align: center;">
   <div class="container mt-4">
