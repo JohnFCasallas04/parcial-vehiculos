@@ -15,7 +15,7 @@
     <div class="col-8">
       <table class="table">
         <thead class="table-dark">
-          <tr>
+          <tr id="encabezadoVehiculo">
             <th>#</th>
             <th>Marca</th>
             <th>Línea</th>
@@ -23,7 +23,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let v of vehiculos; let i = index">
+          <tr *ngFor="let v of vehiculos; let i = index" class="vehiculo">
             <td>
               <dd><strong>{{ i + 1 }}</strong></dd>
             </td>

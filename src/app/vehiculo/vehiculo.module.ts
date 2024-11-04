@@ -4,9 +4,9 @@ import { VehiculoListComponent } from './vehiculo-list/vehiculo-list.component';
 
 @NgModule({
   imports: [
-    CommonModule,
+    CommonModule
   ],
   declarations: [VehiculoListComponent],
-  exports: [VehiculoListComponent]
+  exports: [VehiculoListComponent],
 })
 export class VehiculoModule { }
